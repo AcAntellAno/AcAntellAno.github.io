@@ -1,11 +1,3 @@
-.overlay{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	z-index: 3;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
 .slides-navigation .next,
 .slides-navigation .prev {
 	width: 47px;
@@ -15,12 +7,12 @@
 
 }
 
-.slides-navigation a.prev {
-	left: 20px !important;
+.slides-navigation .prev {
+	left: 20px;
 	background-image: url('../img/icons/prevSlide.png')
 }
 
-.slides-navigation a.next {
-	right: 20px !important;
+.slides-navigation .next {
+	right: 20px;
 	background-image: url('../img/icons/nextSlide.png')
 }
