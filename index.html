@@ -48,10 +48,59 @@
 				</div>
 				<div class="owl-carousel owl-theme">
 					<div class="skill">
-						<span class="chart" data-percent="73"><span class="percent">73</span><canvas height="152" width="152"></canvas></span>
-						<h4>PHP</h4>
-						<p>Used in most of my web based projects</p>
-						
+						<span class="chart" data-percent="75"><span class="percent">75</span><canvas height="152" width="152"></canvas></span>
+						<h4>Java</h4>
+						<p>Primarily used this language during my undergrad</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="53"><span class="percent">53</span><canvas height="152" width="152"></canvas></span>
+						<h4>Javascript</h4>
+						<p>My primary language, have done many web apps with it.</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="80"><span class="percent">80</span><canvas height="152" width="152"></canvas></span>
+						<h4>SQL</h4>
+						<p>Have used SQL many times in my projects, but can get very complex.</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="53"><span class="percent">53</span><canvas height="152" width="152"></canvas></span>
+						<h4>Nodejs</h4>
+						<p>Have always used this for my fullstack web apps. I'm still new to it, but it's pretty much JS.</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="33"><span class="percent">33</span><canvas height="152" width="152"></canvas></span>
+						<h4>Expressjs</h4>
+						<p>Still very much a beginner with Expressjs, have used it in a fullstack application before (Yelp Clone)</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="25"><span class="percent">25</span><canvas height="152" width="152"></canvas></span>
+						<h4>MongoDB</h4>
+						<p>My database of choice for fullstack apps.</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="50"><span class="percent">50</span><canvas height="152" width="152"></canvas></span>
+						<h4>Firebase</h4>
+						<p>Love using firebase for my quick projects, like ones at hackathons.</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="55"><span class="percent">55</span><canvas height="152" width="152"></canvas></span>
+						<h4>MySQL</h4>
+						<p>The db I used during my undergrad</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="22"><span class="percent">22</span><canvas height="152" width="152"></canvas></span>
+						<h4>C++</h4>
+						<p>Used this language during my undergrad, but I don't feel very comfortable with it yet, due to its complexity.</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="90"><span class="percent">90</span><canvas height="152" width="152"></canvas></span>
+						<h4>HTML5</h4>
+						<p>Have used this language a lot, due to my involment with web development</p>
+					</div>
+					<div class="skill">
+						<span class="chart" data-percent="67"><span class="percent">67</span><canvas height="152" width="152"></canvas></span>
+						<h4>CSS3</h4>
+						<p>I am comfortable using CSS3, but can get very tricky.</p>
 					</div>
 				</div>
 			</div>
@@ -71,28 +120,37 @@
 	      $(document).ready(function(){
 	         var typed = new Typed(".typed", {
 	             strings: ["Software Engineer", "Web Developer", 
-	                     "Freelance Developer", "Student"], typeSpeed: 70, loop: true, startDelay: 1000, showCursor: false
+	                     "Freelance Developer", "Student", "Photographer", "Graphic Designer"], typeSpeed: 70, loop: true, startDelay: 1000, showCursor: false
 	         });
 	      });
 	      $('.owl-carousel').owlCarousel({
 	          loop:true,
-	          margin:10,
-	          nav:true,
+	          items: 4,
 	          responsive:{
 	              0:{
 	                  items:1
 	              },
-	              600:{
-	                  items:3
+	              480:{
+	                  items:2
 	              },
-	              1000:{
-	                  items:5
-	           }
+	              768:{
+	                  items:3
+	           },
+	           938:{
+	                  items:4
+	              }
+
 	      }
 	    
 	   });
 	         $('.chart').easyPieChart({
-	             
+	             easing: 'easeInOut',
+	             barColor: '#fff',
+	             trackColor: false,
+	             scaleColor: false,
+	             lineWidth: 4,
+	             size: 152,
+	             onStep: function(from, to, percent){$(this.el).find('.percent').text(Math.round(percent));}
 	          });
 	</script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
