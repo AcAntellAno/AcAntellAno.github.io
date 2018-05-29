@@ -5,8 +5,9 @@
 	<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	<link href="css/superslides.css" rel="stylesheet" type="text/css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"><!-- jQuery -->
-
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js">
 	</script>
 </head>
@@ -115,7 +116,7 @@
 					<div class="squareItem">
 						<div class="squareInnerContainer">
 							<div class="squareIcon">
-								
+								<i class="fa fa-clock"></i>
 							</div>
 							<div class="squareContent">
 								<h2>4</h2>
@@ -124,6 +125,46 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="squareItem">
+						<div class="squareInnerContainer">
+							<div class="squareIcon">
+								<i class="fa fa-smile"></i>
+							</div>
+							<div class="squareContent">
+								<h2>5</h2>
+								<h3>Clients</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="squareItem">
+						<div class="squareInnerContainer">
+							<div class="squareIcon">
+								<i class="fa fa-clock"></i>
+							</div>
+							<div class="squareContent">
+								<h2>4</h2>
+								<h3>Years of Experience</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="squareItem">
+						<div class="squareInnerContainer">
+							<div class="squareIcon">
+								<i class="fa fa-clock"></i>
+							</div>
+							<div class="squareContent">
+								<h2>4</h2>
+								<h3>Years of Experience</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -138,6 +179,10 @@
 	<script src="js/typed.min.js" type="text/javascript">
 	</script> 
 	<script>
+			//Don't cringe, I know this is bad coding practice, but for some odd reason
+			//the jQuery was not working when I had a script tag referencing my js file.
+			//Perhaps it is becuase I am still a noob to js, but IDK why it was not working.
+			//So, I just added the code in a script tag ¯\_(ツ)_/¯
 	      $('#slides').superslides({animation:'fade', play: 4000, pagination: false});
 	      $(document).ready(function(){
 	         var typed = new Typed(".typed", {
