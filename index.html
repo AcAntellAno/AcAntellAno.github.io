@@ -26,7 +26,35 @@
 		<nav class="slides-navigation">
 			<a class="next" href="#"></a> <a class="prev" href="#"></a>
 		</nav>
-	</div><!-- About Section -->
+	</div>
+
+<nav id="navigation" class="navbar navbar-expand-lg">
+	  <a class="navbar-brand" href="#">Anthony Cantellano</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#skills">Skills</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#stats">Experience</a>
+	      </li>
+	       <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#portfolio">Portfolio</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<!-- About Section -->
 	<div class="section" id="about">
 		<div class="container">
 			<div class="row">
@@ -314,6 +342,12 @@
 		</div>
 	</div>
 -->
+
+<div class="copyrightSection">
+	<div class="col-md-12 text-center">
+		<p><i class="fa fa-copyright"> Copyright Anthony Cantellano 2018</i></p>
+	</div>	
+</div>
 	<!-- Bootstrap and JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js">
 	</script> 
@@ -411,8 +445,22 @@
 	                   });
 	                       return false;
 
-	            })
+	            });
+	               /*
+	               const nav = $("#navigation");
+	               const navTop = nav.offset().top;
 
+	               $(window).on("scroll", stickyNavigation);
+	               function stickyNavigation(){
+	               		var body = $("body");
+	               		if($(window).scrollTop() >= navTop){
+	               			body.css("padding-top", nav.outerHeight() + "px");
+	               			body.addClass("fixedNav");
+	               		} else{
+	               			body.removeClass("fixedNav");
+	               		}
+	               }
+	*/
 
 	          });
 	</script> 

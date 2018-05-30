@@ -252,7 +252,7 @@ body {
 .items a {
 	width: 40px;
     height: 40px;
-    background-color: #e74c3c;
+    background-color:  #00b894;
     position: relative;
     display: inline-block;
 
@@ -313,4 +313,46 @@ body {
 
 .items {
 	padding: 0;
+}
+
+.copyrightSection{
+	background-color: black;
+	color: #fff;
+	padding: 30px 5px;
+
+}
+
+.copyrightSection p{
+	margin: 0;
+	letter-spacing: 3px;
+}
+
+#navigation{
+	background-color:  #00b894;
+	padding: 20px 10px;
+	z-index: 100;
+	width: 100%;
+}
+
+#navigation li{
+	padding: 0 10px;
+}
+
+#navigation li a{
+	color: #fff;
+}
+
+.navbar-brand, 
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/icons/menu1.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation{
+	position: fixed;
+	top: 0;
 }
