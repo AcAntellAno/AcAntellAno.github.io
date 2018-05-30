@@ -328,7 +328,7 @@ body {
 }
 
 #navigation{
-	background-color:  #00b894;
+	background-color: #00b894;
 	padding: 20px 10px;
 	z-index: 100;
 	width: 100%;
@@ -348,15 +348,16 @@ body {
 }
 
 .navbar-toggler-icon {
-	background: url(../img/icons/menu1.png);
+	background: url(../img/icons/menu.png);
 	background-size: 100%;
 }
 
+/*
 .fixedNav #navigation{
 	position: fixed;
 	top: 0;
 }
-
+*/
 .loader {
 	width: 100%;
 	height: 100%;
