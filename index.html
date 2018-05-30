@@ -13,6 +13,11 @@
 	</script>
 </head>
 <body>
+	<div class="loader">
+		<div class="inner">
+			
+		</div>
+	</div>
 	<!-- Image Slider Section -->
 	<div id="slides">
 		<div class="overlay"></div>
@@ -370,6 +375,12 @@
 	       //the jQuery was not working when I had a script tag referencing my js file.
 	       //Perhaps it is becuase I am still a noob to js, but IDK why it was not working.
 	       //So, I just added the code in a script tag ¯\_(ツ)_/¯
+
+	       $(window).on("load", function(){
+	       	$(".loader .inner").fadeOut(800, function(){
+	       		$(".loader").fadeOut(900);
+	       	});
+	       })
 	         $('#slides').superslides({animation:'fade', play: 4000, pagination: false});
 	         $(document).ready(function(){
 	            var typed = new Typed(".typed", {
@@ -445,7 +456,15 @@
 	                   });
 	                       return false;
 
+
 	            });
+	               $("#navigation li a").click(function(e){
+	               		e.preventDefault();
+	               		var targetElement = $(this).attr("href");
+	               		var targetPosition = $(targetElement).offset().top;
+	               		$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+	               });
+
 	               /*
 	               const nav = $("#navigation");
 	               const navTop = nav.offset().top;
