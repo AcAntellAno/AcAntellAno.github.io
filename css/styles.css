@@ -20,6 +20,11 @@ body {
 	cursor: pointer;
 }
 
+.main-text {
+	font-size: 6vh;
+	font-weight: 500;
+}
+
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-100%);

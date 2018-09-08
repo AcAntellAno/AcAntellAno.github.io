@@ -8,24 +8,91 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Anthony Cantellano | Software Engineer</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/container.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/card.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/dimmer.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/grid.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/image.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/reveal.min.css">
 	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 	<div class="main-content ui container">
-		<h1 class="title-text double-underline" data-anijs="if: click, do: flipInY animated">Anthony Cantellano<span class="blinking-cursor">|</span>
+		<h1 class="title-text" data-anijs="if: click, do: flipInY animated">Anthony Cantellano<span class="blinking-cursor">|</span>
 			<i><img src="./imgs/icons/coffeeIcon.png" alt="coffee"></i><i><img src="./imgs/icons/codeIcon.png" alt="code"></i></h1>
 		<h3 class="sub-text">Software Engineer</h3>
 		<h3 class="sub-text"><em>Javascript (Nodejs), Java</em></h3>
 	</div>
 
+	<div class="ui our column doubling stackable grid container">
+		<h2 class="main-text">Recent Projects</h2>
+		<div class="ui special cards">
+			<div class="card">
+				<div class="blurring dimmable image">
+					<div class="ui dimmer">
+						<div class="content">
+							<div class="center">
+								<div class="ui inverted button">View Project</div>
+							</div>
+						</div>
+					</div>
+					<img src="./imgs/code.jpg" alt="code">
+				</div>
+				<div class="content">
+					<a class="header">SnapShop</a>
+					<div>
+						<button class="ui inverted primary button">Github Repo</button>
+					</div>
+					<!-- <div class="meta">
+						<span class="date">Created in Sep 2017</span>
+					</div> -->
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="users icon"></i>
+						5 Person Project
+					</a>
+
+				</div>
+
+			</div>
+			<div class="card">
+				<div class="blurring dimmable image">
+					<div class="ui inverted dimmer">
+						<div class="content">
+							<div class="center">
+								<div class="ui primary button">Add Friend</div>
+							</div>
+						</div>
+					</div>
+					<img src="./imgs/code.jpg" alt="code">
+				</div>
+				<div class="content">
+					<a class="header">Team Hess</a>
+					<div class="meta">
+						<span class="date">Created in Aug 2014</span>
+					</div>
+				</div>
+				<div class="extra content">
+					<a>
+						<i class="users icon"></i>
+						2 Members
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	    crossorigin="anonymous"></script>
 	<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
 	<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/dimmer.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
