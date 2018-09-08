@@ -7,11 +7,18 @@ body {
 	background: -webkit-linear-gradient(-45deg, rgba(97, 208, 149, 1) 0%, rgba(88, 164, 176, 1) 100%);
 	background: linear-gradient(135deg, rgba(97, 208, 149, 1) 0%, rgba(88, 164, 176, 1) 100%);
 	font-family: 'Roboto Slab', serif;
+	color: #D9E5D6;
 }
 
 .title-text {
 	font-size: 8vh;
 	font-weight: 700;
+}
+
+.title-text:hover {
+	color: #58A4B0;
+	cursor: pointer;
+	text-decoration: underline;
 }
 
 .sub-text {
@@ -32,4 +39,76 @@ body {
 .main-content {
 	animation: 1s ease-out 0s 1 slideInFromLeft;
 	padding: 30px;
+}
+
+/* credit goes to this code pen: https://codepen.io/ArtemGordinsky/pen/GnLBq */
+.blinking-cursor {
+	font-weight: 100;
+	font-size: 8vh;
+	color: #2E3D48;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+
+	from,
+	to {
+		color: transparent;
+	}
+
+	50% {
+		color: black;
+	}
+}
+
+@-moz-keyframes blink {
+
+	from,
+	to {
+		color: transparent;
+	}
+
+	50% {
+		color: black;
+	}
+}
+
+@-webkit-keyframes "blink" {
+
+	from,
+	to {
+		color: transparent;
+	}
+
+	50% {
+		color: black;
+	}
+}
+
+@-ms-keyframes "blink" {
+
+	from,
+	to {
+		color: transparent;
+	}
+
+	50% {
+		color: black;
+	}
+}
+
+@-o-keyframes "blink" {
+
+	from,
+	to {
+		color: transparent;
+	}
+
+	50% {
+		color: black;
+	}
 }
