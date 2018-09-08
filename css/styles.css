@@ -2,10 +2,10 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background: rgb(26, 188, 156);
-	background: -moz-linear-gradient(-45deg, rgba(97, 208, 149, 1) 0%, rgba(88, 164, 176, 1) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(97, 208, 149, 1) 0%, rgba(88, 164, 176, 1) 100%);
-	background: linear-gradient(135deg, rgba(97, 208, 149, 1) 0%, rgba(88, 164, 176, 1) 100%);
+	/* background: rgb(26, 188, 156); */
+	background: -moz-linear-gradient(-45deg, rgba(157, 218, 185, 1) 0%, rgba(87, 126, 211, 1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(157, 218, 185, 1) 0%, rgba(87, 126, 211, 1) 100%);
+	background: linear-gradient(135deg, rgba(157, 218, 185, 1) 0%, rgba(87, 126, 211, 1) 100%);
 	font-family: 'Roboto Slab', serif;
 	color: #D9E5D6;
 }
