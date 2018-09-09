@@ -25,6 +25,34 @@ body {
 	font-weight: 500;
 }
 
+.card {
+	background-color: rgb(0, 255, 197);
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+.card:hover {
+	opacity: 1
+}
+
+.card-title {
+	color: #5e5f60;
+	font-weight: 400;
+	background: rgba(26, 188, 156, .2);
+	padding: 10px;
+	border-radius: 10%;
+}
+
+.card-text {
+	color: black;
+}
+
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-100%);
