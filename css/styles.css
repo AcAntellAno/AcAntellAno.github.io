@@ -67,6 +67,25 @@ body {
 	margin-top: 10px;
 }
 
+.rounded {
+	width: 350px;
+	height: 350px;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.span4 img {
+	margin-right: 10px;
+}
+
+.span4 .img-left {
+	float: left;
+}
+
+.span4 .img-right {
+	float: right;
+}
+
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-100%);
