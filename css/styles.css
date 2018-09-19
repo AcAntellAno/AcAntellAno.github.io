@@ -70,6 +70,19 @@ body {
 
 footer {
 	text-align: center;
+	margin-bottom: 60px;
+}
+
+.big-text {
+	font-size: 5vh;
+}
+
+.foot {
+	padding: 60px;
+	background: -moz-linear-gradient(-45deg, rgba(32, 224, 186, 1) 0%, rgba(87, 126, 211, 1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(32, 224, 186, 1) 0%, rgba(87, 126, 211, 1) 100%);
+	background: linear-gradient(135deg, rgba(32, 224, 186, 1) 0%, rgba(87, 126, 211, 1) 100%);
+	text-align: center;
 }
 
 @keyframes slideInFromLeft {
