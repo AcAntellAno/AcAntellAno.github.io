@@ -38,9 +38,9 @@ body {
 	transition: 0.3s;
 }
 
-.card:hover {
+/* .card:hover {
 	opacity: 0.6;
-}
+} */
 
 .card-title {
 	color: #5e5f60;
