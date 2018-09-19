@@ -78,7 +78,7 @@ footer {
 }
 
 .foot {
-	padding: 60px;
+	padding: 40px;
 	background: -moz-linear-gradient(-45deg, rgba(32, 224, 186, 1) 0%, rgba(87, 126, 211, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(32, 224, 186, 1) 0%, rgba(87, 126, 211, 1) 100%);
 	background: linear-gradient(135deg, rgba(32, 224, 186, 1) 0%, rgba(87, 126, 211, 1) 100%);
