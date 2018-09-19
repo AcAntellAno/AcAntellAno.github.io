@@ -68,6 +68,10 @@ body {
 	margin-top: 10px;
 }
 
+footer {
+	text-align: center;
+}
+
 @keyframes slideInFromLeft {
 	0% {
 		transform: translateX(-100%);
